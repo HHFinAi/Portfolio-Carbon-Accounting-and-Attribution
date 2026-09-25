@@ -1,0 +1,95 @@
+{
+  "agent": "portfolio-carbon-accounting-agent",
+  "version": "0.2.0",
+  "operations": [
+    {
+      "operation": "carbon_inventory",
+      "signature": "(holdings: 'list[dict]', portfolio_market_value: 'float') -> 'dict'",
+      "argument_units": {
+        "holdings": "normalized_holding_records",
+        "portfolio_market_value": "$money"
+      },
+      "output_unit": "carbon_inventory",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "dscr",
+      "signature": "(cash_available: 'float', debt_service: 'float') -> 'float'",
+      "argument_units": {
+        "cash_available": "$money",
+        "debt_service": "$money"
+      },
+      "output_unit": "multiple",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "financed_emissions",
+      "signature": "(outstanding_amount: 'float', evic: 'float', emissions_tco2e: 'float') -> 'float'",
+      "argument_units": {
+        "outstanding_amount": "$money",
+        "evic": "$money",
+        "emissions_tco2e": "tCO2e"
+      },
+      "output_unit": "tCO2e",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "financed_emissions_bridge",
+      "signature": "(amount0: 'float', emissions0: 'float', evic0: 'float', amount1: 'float', emissions1: 'float', evic1: 'float') -> 'dict'",
+      "argument_units": {
+        "amount0": "$money",
+        "emissions0": "tCO2e",
+        "evic0": "$money",
+        "amount1": "$money",
+        "emissions1": "tCO2e",
+        "evic1": "$money"
+      },
+      "output_unit": "financed_emissions_bridge",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "holding_period_return",
+      "signature": "(initial_dirty_price: 'float', exit_dirty_price: 'float', cash_income: 'float', funding_cost: 'float', transaction_cost: 'float') -> 'float'",
+      "argument_units": {
+        "initial_dirty_price": "$money",
+        "exit_dirty_price": "$money",
+        "cash_income": "$money",
+        "funding_cost": "$money",
+        "transaction_cost": "$money"
+      },
+      "output_unit": "decimal_return",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "npv",
+      "signature": "(cashflows: 'list[float]', annual_discount: 'float') -> 'float'",
+      "argument_units": {
+        "cashflows": "$money",
+        "annual_discount": "decimal"
+      },
+      "output_unit": "$money",
+      "description": "Periodic NPV; cashflows[0] is at time zero, then annual periods."
+    },
+    {
+      "operation": "portfolio_emissions_attribution",
+      "signature": "(previous_holdings: 'list[dict]', current_holdings: 'list[dict]', scope: 'str') -> 'dict'",
+      "argument_units": {
+        "previous_holdings": "normalized_holding_records",
+        "current_holdings": "normalized_holding_records",
+        "scope": "scope_name"
+      },
+      "output_unit": "portfolio_emissions_attribution",
+      "description": "See source code and domain methodology for assumptions."
+    },
+    {
+      "operation": "scale",
+      "signature": "(value: 'float', factor: 'float') -> 'float'",
+      "argument_units": {
+        "value": "$input_unit",
+        "factor": "conversion_factor"
+      },
+      "output_unit": "$output_unit",
+      "description": "Explicit arithmetic conversion; external unit semantics need human review."
+    }
+  ]
+}

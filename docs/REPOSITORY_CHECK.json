@@ -1,0 +1,8 @@
+{
+  "agent": "portfolio-carbon-accounting-agent",
+  "routes": 3,
+  "stages": 10,
+  "operations": 8,
+  "checks": "PASS",
+  "remote_urls_checked": false
+}

@@ -1,0 +1,43 @@
+{
+  "holdings": [
+    {
+      "id": "FICTIONAL-EQ",
+      "issuer_id": "FICTIONAL-I1",
+      "asset_type": "listed-equity",
+      "issuer_is_listed": true,
+      "amount_basis": "market_value",
+      "financed_amount": 1000000,
+      "market_value": 1000000,
+      "currency": "USD",
+      "boundary_id": "fictional-comparable-boundary",
+      "financial_year": 2025,
+      "emissions_year": 2025,
+      "evic": 100000000,
+      "revenue": 50000000,
+      "scope12_tco2e": 100000,
+      "scope3_tco2e": 500000,
+      "quality_scope12": 2,
+      "quality_scope3": 4
+    },
+    {
+      "id": "FICTIONAL-BOND",
+      "issuer_id": "FICTIONAL-I2",
+      "asset_type": "corporate-bond",
+      "issuer_is_listed": true,
+      "amount_basis": "book_value",
+      "financed_amount": 2000000,
+      "market_value": 1800000,
+      "currency": "USD",
+      "boundary_id": "fictional-comparable-boundary",
+      "financial_year": 2025,
+      "emissions_year": 2025,
+      "evic": 100000000,
+      "revenue": 50000000,
+      "scope12_tco2e": null,
+      "scope3_tco2e": null,
+      "quality_scope12": 2,
+      "quality_scope3": 4
+    }
+  ],
+  "portfolio_market_value": 3000000
+}

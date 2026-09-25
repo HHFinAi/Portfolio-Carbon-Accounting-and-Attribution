@@ -1,0 +1,12 @@
+stage,claim_id,kind,claim,scope,period,evidence_ids
+mandate,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+evidence,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+holdings,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+emissions,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+valuation,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+valuation,CALC1,CALCULATION,"Recomputed illustrative financed_emissions; inspect arguments, units and result in calculation C1.",FICTIONAL-SUBJECT,2026-09-25,
+interpretation,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+market,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+expression,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+challenge,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,
+memo,A1,ASSUMPTION,"Fictional corporate portfolio: a decline in measured financed emissions can arise from selling assets, changing EVIC or gaining data coverage, not just issuer decarbonisation.",FICTIONAL-SUBJECT,2026-09-25,

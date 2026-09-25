@@ -1,5 +1,7 @@
 # Portfolio Carbon Accounting and Attribution Agent
 
+[![Validate research workflow](https://github.com/HHFinAi/Portfolio-Carbon-Accounting-and-Attribution/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/HHFinAi/Portfolio-Carbon-Accounting-and-Attribution/actions/workflows/validate.yml)
+
 **Institutional-quality buy-side research, designed to support tradable investment decisions through a traceable, auditable workflow.**
 
 What emissions are financed by the scoped holdings, how complete is the data, and why did the measured inventory change?

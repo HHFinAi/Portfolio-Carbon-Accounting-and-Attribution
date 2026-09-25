@@ -1,0 +1,20 @@
+{
+  "as_of": "2026-09-25",
+  "standards": [
+    {
+      "id": "PCAF-2025",
+      "title": "PCAF Part A financed emissions, third edition 2025",
+      "url": "https://carbonaccountingfinancials.com/standard",
+      "source_date": "2025-12-02",
+      "checked_on": "2026-09-25",
+      "status": "VOLUNTARY_ACCOUNTING_STANDARD",
+      "can_apply_as_current_rule": false,
+      "note": "Executable scope is a bounded listed-company equity/corporate-debt EVIC helper. Other asset classes need their own methods. Avoided emissions are separate from the inventory.",
+      "jurisdiction": "See primary source and mandate",
+      "effective_from": null,
+      "verification_scope": "Official landing page and displayed PDF pages 41–42 reviewed for listed-company numerator and EVIC denominator. Not an exhaustive conformity audit.",
+      "source_document_url": "https://carbonaccountingfinancials.com/files/standard-launch-2025/PCAF-PartA-2025-V3-15012026.pdf",
+      "source_locator": "Part A third edition, printed pages 41–42 (PDF pages 41–42, one-indexed)"
+    }
+  ]
+}

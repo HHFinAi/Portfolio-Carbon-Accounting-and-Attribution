@@ -1,0 +1,29 @@
+{
+  "id": "C1",
+  "operation": "financed_emissions",
+  "arguments": {
+    "outstanding_amount": 1000000,
+    "evic": 100000000,
+    "emissions_tco2e": 500000
+  },
+  "currency": "USD",
+  "measurement_unit": "specified_outcome",
+  "input_unit": "percent",
+  "result_unit": "decimal",
+  "input_provenance": {
+    "outstanding_amount": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "evic": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "USD"
+    },
+    "emissions_tco2e": {
+      "assumption": "Explicit illustrative input, not a market observation or verified forecast.",
+      "unit": "tCO2e"
+    }
+  },
+  "result": 5000.0,
+  "output_unit": "tCO2e"
+}

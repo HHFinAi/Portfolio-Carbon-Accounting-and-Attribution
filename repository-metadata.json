@@ -1,6 +1,6 @@
 {
   "owner": "HHFinAi",
-  "repository_name": "portfolio-carbon-accounting-agent",
+  "repository_name": "Portfolio-Carbon-Accounting-and-Attribution",
   "description": "Carbon accounting: institutional-quality buy-side research with traceable, auditable workflows and investment-decision handoffs. Research support, not certification or trading.",
   "topics": [
     "sustainable-finance",
@@ -15,7 +15,9 @@
     "financed-emissions",
     "carbon-accounting"
   ],
-  "publication_status": "prepared-not-published",
-  "intended_repository_url": "https://github.com/HHFinAi/portfolio-carbon-accounting-agent",
-  "homepage": null
+  "publication_status": "published",
+  "homepage": null,
+  "repository_url": "https://github.com/HHFinAi/Portfolio-Carbon-Accounting-and-Attribution",
+  "visibility": "public",
+  "publication_status_checked_on": "2026-10-03"
 }

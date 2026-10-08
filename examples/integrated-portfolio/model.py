@@ -23,11 +23,40 @@ sys.path.insert(0, str(REPO))
 from sf_agent.analytics import carbon_inventory, portfolio_emissions_attribution
 
 SCOPES = ("scope12_tco2e", "scope3_tco2e")
+REPORT_SIGNIFICANT_DIGITS = 12
+RECONCILIATION_ABS_TOLERANCE = 1e-9
 
 
 def digest(value):
     return hashlib.sha256(json.dumps(value, sort_keys=True, separators=(",", ":"),
                                      allow_nan=False).encode()).hexdigest()
+
+
+def canonical_report(value):
+    """Stabilize calculated reports across Python's float-sum implementations.
+
+    Inputs and their hashes are not rounded. Check raw reconciliation residuals
+    before reporting them as zero at the existing 1e-9 absolute tolerance; all
+    other calculated floats use 12 significant digits. Integers stay integers.
+    """
+    if isinstance(value, dict):
+        result = {}
+        for key, item in value.items():
+            if key == "reconciliation_residual":
+                if not math.isfinite(item) or not math.isclose(
+                        item, 0, abs_tol=RECONCILIATION_ABS_TOLERANCE):
+                    raise ValueError("raw attribution does not reconcile")
+                result[key] = 0.0
+            else:
+                result[key] = canonical_report(item)
+        return result
+    if isinstance(value, list):
+        return [canonical_report(item) for item in value]
+    if type(value) is float:
+        if not math.isfinite(value):
+            raise ValueError("calculated report must contain finite numbers")
+        return float(format(value, f".{REPORT_SIGNIFICANT_DIGITS}g")) if value else 0.0
+    return value
 
 
 def finite(value, name, positive=False):
@@ -223,14 +252,20 @@ def calculate(inputs, sources):
         financed[scope] = portfolio_emissions_attribution(x, y, scope)
         waci[scope] = waci_attribution(old, new, previous["illustrative_nav_usd"],
                                        current["illustrative_nav_usd"], scope)
-    return {"schema_version": "1.0.0", "information_cutoff": inputs["information_cutoff"],
+    result = {"schema_version": "1.0.0", "information_cutoff": inputs["information_cutoff"],
             "input_sha256": digest(inputs), "source_ledger_sha256": digest(sources),
             "classification": inputs["classification"], "status": "NEEDS_DATA",
             "human_review": "NOT_RECORDED", "research_approval": "NOT_GRANTED",
             "trade_or_communication_authority": False,
             "backtest_or_actual_holdings": False, "inventories": inventories,
             "financed_emissions_attribution": financed, "waci_attribution": waci,
+            "calculated_float_reporting": {
+                "significant_digits": REPORT_SIGNIFICANT_DIGITS,
+                "raw_reconciliation_absolute_tolerance": RECONCILIATION_ABS_TOLERANCE,
+                "residual_reporting": "Zero only after raw residual passes tolerance",
+                "input_and_source_hashes": "Exact canonical JSON, without report rounding"},
             "open_material_issues": inputs["open_material_issues"]}
+    return canonical_report(result)
 
 
 def provenance(inputs, sources, results, handoffs):
@@ -274,7 +309,8 @@ def check():
         raise SystemExit("provenance.json has stale file or canonical hashes")
     for metric in ("financed_emissions_attribution", "waci_attribution"):
         for scope in SCOPES:
-            if not math.isclose(actual[metric][scope]["reconciliation_residual"], 0, abs_tol=1e-9):
+            if not math.isclose(actual[metric][scope]["reconciliation_residual"], 0,
+                                abs_tol=RECONCILIATION_ABS_TOLERANCE):
                 raise SystemExit("attribution does not reconcile")
     validate_handoffs(handoffs, inputs, sources)
     print("Integrated portfolio: inputs, source ledger, results and handoffs verified; two scopes reconcile.")

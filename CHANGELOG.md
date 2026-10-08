@@ -2,6 +2,7 @@
 
 ## 2026-10-08 — Research completion and reproducibility
 
+- Stabilized report reproduction across supported Python versions, with regressions for floating-point summation differences.
 - Added a five-issuer illustrative portfolio with two public annual-data vintages, emissions coverage, WACI and attribution, explicitly bounded EVIC/financed-emissions coverage, and a readable investment memo.
 - Connected location-level nature evidence, financial mechanisms and proposed stewardship without claiming private holdings or issuer contact.
 - Updated full-directory onboarding and consolidated validation with unsigned release-inventory integrity checks.

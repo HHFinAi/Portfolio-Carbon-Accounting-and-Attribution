@@ -27,8 +27,13 @@ jobs:
         with:
           python-version: ${{ matrix.python-version }}
 
-      - name: Run unit tests
-        run: python -m unittest discover -s tests -v
+      - name: Validate software, release inventory and research examples
+        run: python scripts/validate_repository.py --out runs/ci-validation
 
-      - name: Run repository validation
-        run: python scripts/check_repository.py
+      - name: Archive validation logs
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: validation-${{ matrix.python-version || matrix.python }}
+          path: runs/ci-validation
+          if-no-files-found: error

@@ -1,0 +1,465 @@
+{
+  "schema_version": "1.0.0",
+  "information_cutoff": "2026-10-08",
+  "classification": "ILLUSTRATIVE_HOLDINGS_WITH_REPORTED_ISSUER_DATA",
+  "portfolio_owner": "Hypothetical public demonstration; not Ed or a client portfolio",
+  "snapshots": [
+    {
+      "holdings_date": "2023-12-31",
+      "illustrative_nav_usd": 10000000,
+      "holdings_status": "ASSUMPTION: hypothetical end-year USD market values; no shares, trades or returns inferred",
+      "measurement_vintage": "Issuer FY2023 values as retrieved 2026-10-08, including later restatements",
+      "issuers": [
+        {
+          "issuer_id": "MSFT",
+          "issuer_name": "Microsoft Corporation",
+          "currency": "USD",
+          "illustrative_weight": 0.3,
+          "emissions_year": 2023,
+          "emissions_period_end": "2023-06-30",
+          "revenue_year": 2023,
+          "revenue_period_end": "2023-06-30",
+          "scope12_tco2e": 538094,
+          "scope3_tco2e": 16397000,
+          "revenue_usd_m": 211915,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "MSFT-reported-operational-control",
+            "scope3_tco2e": "MSFT-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-MS-F",
+              "locator": "Income Statements, Total revenue, years ended June 30 FY2023/FY2024; FY2023"
+            },
+            "scope12_tco2e": {
+              "id": "S-MS-E",
+              "locator": "Printed p 3 Table 1A FY23/FY24; p 8 inventory boundary/recalculation policy; FY2023"
+            },
+            "scope3_tco2e": {
+              "id": "S-MS-E",
+              "locator": "Printed p 3 Table 1A FY23/FY24; p 8 inventory boundary/recalculation policy; FY2023"
+            }
+          }
+        },
+        {
+          "issuer_id": "AMZN",
+          "issuer_name": "Amazon.com, Inc.",
+          "currency": "USD",
+          "illustrative_weight": 0.25,
+          "emissions_year": 2023,
+          "emissions_period_end": "2023-12-31",
+          "revenue_year": 2023,
+          "revenue_period_end": "2023-12-31",
+          "scope12_tco2e": 16980000,
+          "scope3_tco2e": 47400000,
+          "revenue_usd_m": 574785,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "AMZN-reported-operational-control",
+            "scope3_tco2e": "AMZN-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-AM-F",
+              "locator": "Item7 Net Sales table; Consolidated Statements of Operations, Net sales; FY2023"
+            },
+            "scope12_tco2e": {
+              "id": "S-AM-E",
+              "locator": "Printed p 50 Amazon Carbon Footprint Data Tables, 2023/2024 columns; FY2023"
+            },
+            "scope3_tco2e": {
+              "id": "S-AM-E",
+              "locator": "Printed p 50 Amazon Carbon Footprint Data Tables, 2023/2024 columns; FY2023"
+            }
+          }
+        },
+        {
+          "issuer_id": "META",
+          "issuer_name": "Meta Platforms, Inc.",
+          "currency": "USD",
+          "illustrative_weight": 0.2,
+          "emissions_year": 2023,
+          "emissions_period_end": "2023-12-31",
+          "revenue_year": 2023,
+          "revenue_period_end": "2023-12-31",
+          "scope12_tco2e": 50610,
+          "scope3_tco2e": 7445621,
+          "revenue_usd_m": 134902,
+          "evic_components": {
+            "date": "2023-12-31",
+            "class_a_shares_m": 2211,
+            "class_b_shares_m": 350,
+            "close_price_usd": 353.96,
+            "total_liabilities_usd_m": 76455,
+            "preferred_equity_usd_m": 0,
+            "minority_interests_usd_m": 0,
+            "cash_deduction_usd_m": 0,
+            "equity_component_classification": "INFERENCE_FROM_NO_SEPARATE_REPORTED_COMPONENT",
+            "class_b_valuation": "EXPLICIT_METHOD: convertible Class B valued at Class A price; no separate Class B liquidity discount",
+            "debt_definition": "All disclosed total liabilities, including leases; do not add debt/leases again. PCAF 2025 p 42 footnote 45.",
+            "rounding": "Share counts are reported in millions; constructed market equity is approximate.",
+            "source_refs": [
+              {
+                "id": "S-META-F24",
+                "locator": "p 86 Consolidated Balance Sheets, year-end Class A/Class B shares and Total liabilities; Note 4 identical liquidation/dividend rights; Note 13 Class B conversion"
+              },
+              {
+                "id": "S-META-F23",
+                "locator": "Item5 Holders of Record, closing price at December 31,2023"
+              },
+              {
+                "id": "S-PCAF",
+                "locator": "p 42 EVIC definition and footnotes 45\u201346"
+              }
+            ]
+          },
+          "scope_boundaries": {
+            "scope12_tco2e": "META-reported-operational-control",
+            "scope3_tco2e": "META-adjusted-GHGP-FY2023"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-META-F24",
+              "locator": "p 57 closing price; p 86 balance sheet shares/total liabilities; p 87 revenue; Note 4 identical liquidation/dividend rights; Note 13 Class B conversion; FY2023"
+            },
+            "scope12_tco2e": {
+              "id": "S-META-E",
+              "locator": "Printed B Scope 1/2/3; C operational total; E Scope 3 methodology footnote; I Mesa water withdrawal; J water stress; FY2023"
+            },
+            "scope3_tco2e": {
+              "id": "S-META-E",
+              "locator": "Printed B Scope 1/2/3; C operational total; E Scope 3 methodology footnote; I Mesa water withdrawal; J water stress; FY2023"
+            }
+          }
+        },
+        {
+          "issuer_id": "CSCO",
+          "issuer_name": "Cisco Systems, Inc.",
+          "currency": "USD",
+          "illustrative_weight": 0.15,
+          "emissions_year": 2023,
+          "emissions_period_end": "2023-07-29",
+          "revenue_year": 2023,
+          "revenue_period_end": "2023-07-29",
+          "scope12_tco2e": 121321,
+          "scope3_tco2e": 25879741,
+          "revenue_usd_m": 56998,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "CSCO-reported-operational-control",
+            "scope3_tco2e": "CSCO-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-CS-F",
+              "locator": "Consolidated Statements of Operations, fiscal-year total revenue columns July 29, 2023 and July 27, 2024; FY2023"
+            },
+            "scope12_tco2e": {
+              "id": "S-CS-E",
+              "locator": "Emissions Data: Scope 1/2 GHG total and Scope 3 total, FY23/FY24 columns; accompanying historical-data notes; FY2023"
+            },
+            "scope3_tco2e": {
+              "id": "S-CS-E",
+              "locator": "Emissions Data: Scope 1/2 GHG total and Scope 3 total, FY23/FY24 columns; accompanying historical-data notes; FY2023"
+            }
+          }
+        },
+        {
+          "issuer_id": "IBM",
+          "issuer_name": "International Business Machines Corporation",
+          "currency": "USD",
+          "illustrative_weight": 0.1,
+          "emissions_year": 2023,
+          "emissions_period_end": "2023-12-31",
+          "revenue_year": 2023,
+          "revenue_period_end": "2023-12-31",
+          "scope12_tco2e": 364000,
+          "scope3_tco2e": null,
+          "revenue_usd_m": 61860,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "IBM-reported-operational-control",
+            "scope3_tco2e": "IBM-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-IBM-F",
+              "locator": "Printed p 46 Consolidated Statement of Income, Total revenue 2024/2023; FY2023"
+            },
+            "scope12_tco2e": {
+              "id": "S-IBM-E",
+              "locator": "Environment, columns 2023/2024: Total operational GHG emissions; Scope 3 indirect emissions row; footnotes 1/5/6/7; FY2023"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "holdings_date": "2024-12-31",
+      "illustrative_nav_usd": 10000000,
+      "holdings_status": "ASSUMPTION: hypothetical end-year USD market values; no shares, trades or returns inferred",
+      "measurement_vintage": "Issuer FY2024 values as retrieved 2026-10-08, including later restatements",
+      "issuers": [
+        {
+          "issuer_id": "MSFT",
+          "issuer_name": "Microsoft Corporation",
+          "currency": "USD",
+          "illustrative_weight": 0.25,
+          "emissions_year": 2024,
+          "emissions_period_end": "2024-06-30",
+          "revenue_year": 2024,
+          "revenue_period_end": "2024-06-30",
+          "scope12_tco2e": 402600,
+          "scope3_tco2e": 15140000,
+          "revenue_usd_m": 245122,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "MSFT-reported-operational-control",
+            "scope3_tco2e": "MSFT-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-MS-F",
+              "locator": "Income Statements, Total revenue, years ended June 30 FY2023/FY2024; FY2024"
+            },
+            "scope12_tco2e": {
+              "id": "S-MS-E",
+              "locator": "Printed p 3 Table 1A FY23/FY24; p 8 inventory boundary/recalculation policy; FY2024"
+            },
+            "scope3_tco2e": {
+              "id": "S-MS-E",
+              "locator": "Printed p 3 Table 1A FY23/FY24; p 8 inventory boundary/recalculation policy; FY2024"
+            }
+          }
+        },
+        {
+          "issuer_id": "AMZN",
+          "issuer_name": "Amazon.com, Inc.",
+          "currency": "USD",
+          "illustrative_weight": 0.2,
+          "emissions_year": 2024,
+          "emissions_period_end": "2024-12-31",
+          "revenue_year": 2024,
+          "revenue_period_end": "2024-12-31",
+          "scope12_tco2e": 17930000,
+          "scope3_tco2e": 50320000,
+          "revenue_usd_m": 637959,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "AMZN-reported-operational-control",
+            "scope3_tco2e": "AMZN-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-AM-F",
+              "locator": "Item7 Net Sales table; Consolidated Statements of Operations, Net sales; FY2024"
+            },
+            "scope12_tco2e": {
+              "id": "S-AM-E",
+              "locator": "Printed p 50 Amazon Carbon Footprint Data Tables, 2023/2024 columns; FY2024"
+            },
+            "scope3_tco2e": {
+              "id": "S-AM-E",
+              "locator": "Printed p 50 Amazon Carbon Footprint Data Tables, 2023/2024 columns; FY2024"
+            }
+          }
+        },
+        {
+          "issuer_id": "META",
+          "issuer_name": "Meta Platforms, Inc.",
+          "currency": "USD",
+          "illustrative_weight": 0.25,
+          "emissions_year": 2024,
+          "emissions_period_end": "2024-12-31",
+          "revenue_year": 2024,
+          "revenue_period_end": "2024-12-31",
+          "scope12_tco2e": 48826,
+          "scope3_tco2e": 8151769,
+          "revenue_usd_m": 164501,
+          "evic_components": {
+            "date": "2024-12-31",
+            "class_a_shares_m": 2190,
+            "class_b_shares_m": 344,
+            "close_price_usd": 585.51,
+            "total_liabilities_usd_m": 93417,
+            "preferred_equity_usd_m": 0,
+            "minority_interests_usd_m": 0,
+            "cash_deduction_usd_m": 0,
+            "equity_component_classification": "INFERENCE_FROM_NO_SEPARATE_REPORTED_COMPONENT",
+            "class_b_valuation": "EXPLICIT_METHOD: convertible Class B valued at Class A price; no separate Class B liquidity discount",
+            "debt_definition": "All disclosed total liabilities, including leases; do not add debt/leases again. PCAF 2025 p 42 footnote 45.",
+            "rounding": "Share counts are reported in millions; constructed market equity is approximate.",
+            "source_refs": [
+              {
+                "id": "S-META-F24",
+                "locator": "p 86 Consolidated Balance Sheets, year-end Class A/Class B shares and Total liabilities; Note 4 identical liquidation/dividend rights; Note 13 Class B conversion"
+              },
+              {
+                "id": "S-META-F24",
+                "locator": "Item5 Holders of Record, closing price at December 31,2024"
+              },
+              {
+                "id": "S-PCAF",
+                "locator": "p 42 EVIC definition and footnotes 45\u201346"
+              }
+            ]
+          },
+          "scope_boundaries": {
+            "scope12_tco2e": "META-reported-operational-control",
+            "scope3_tco2e": "META-management-criteria-FY2024"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-META-F24",
+              "locator": "p 57 closing price; p 86 balance sheet shares/total liabilities; p 87 revenue; Note 4 identical liquidation/dividend rights; Note 13 Class B conversion; FY2024"
+            },
+            "scope12_tco2e": {
+              "id": "S-META-E",
+              "locator": "Printed B Scope 1/2/3; C operational total; E Scope 3 methodology footnote; I Mesa water withdrawal; J water stress; FY2024"
+            },
+            "scope3_tco2e": {
+              "id": "S-META-E",
+              "locator": "Printed B Scope 1/2/3; C operational total; E Scope 3 methodology footnote; I Mesa water withdrawal; J water stress; FY2024"
+            }
+          }
+        },
+        {
+          "issuer_id": "CSCO",
+          "issuer_name": "Cisco Systems, Inc.",
+          "currency": "USD",
+          "illustrative_weight": 0.15,
+          "emissions_year": 2024,
+          "emissions_period_end": "2024-07-27",
+          "revenue_year": 2024,
+          "revenue_period_end": "2024-07-27",
+          "scope12_tco2e": 60980,
+          "scope3_tco2e": 19767693,
+          "revenue_usd_m": 53803,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "CSCO-reported-operational-control",
+            "scope3_tco2e": "CSCO-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-CS-F",
+              "locator": "Consolidated Statements of Operations, fiscal-year total revenue columns July 29, 2023 and July 27, 2024; FY2024"
+            },
+            "scope12_tco2e": {
+              "id": "S-CS-E",
+              "locator": "Emissions Data: Scope 1/2 GHG total and Scope 3 total, FY23/FY24 columns; accompanying historical-data notes; FY2024"
+            },
+            "scope3_tco2e": {
+              "id": "S-CS-E",
+              "locator": "Emissions Data: Scope 1/2 GHG total and Scope 3 total, FY23/FY24 columns; accompanying historical-data notes; FY2024"
+            }
+          }
+        },
+        {
+          "issuer_id": "IBM",
+          "issuer_name": "International Business Machines Corporation",
+          "currency": "USD",
+          "illustrative_weight": 0.15,
+          "emissions_year": 2024,
+          "emissions_period_end": "2024-12-31",
+          "revenue_year": 2024,
+          "revenue_period_end": "2024-12-31",
+          "scope12_tco2e": 265000,
+          "scope3_tco2e": null,
+          "revenue_usd_m": 62753,
+          "evic_components": null,
+          "scope_boundaries": {
+            "scope12_tco2e": "IBM-reported-operational-control",
+            "scope3_tco2e": "IBM-reported-scope3"
+          },
+          "issuer_estimation_status": "ISSUER_REPORTED_INCLUDES_ISSUER_METHOD_ESTIMATES; NO_WORKFLOW_IMPUTATION",
+          "source_refs": {
+            "revenue_usd_m": {
+              "id": "S-IBM-F",
+              "locator": "Printed p 46 Consolidated Statement of Income, Total revenue 2024/2023; FY2024"
+            },
+            "scope12_tco2e": {
+              "id": "S-IBM-E",
+              "locator": "Environment, columns 2023/2024: Total operational GHG emissions; Scope 3 indirect emissions row; footnotes 1/5/6/7; FY2024"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "fx_policy": "All portfolio values and issuer revenue are USD. No local-currency conversion applied. USD-reported global revenue contains company translation effects, included in the revenue denominator effect rather than separately attributed.",
+  "time_policy": "Retrospective data-vintage comparison, not a point-in-time backtest. Historical fiscal figures and later restatements were retrieved in 2026. Fiscal year-end alignment is enforced per issuer, not falsely treated as identical across issuers.",
+  "scope12_basis": "Reported operational Scope 1+market-based Scope 2; no offset subtraction",
+  "scope3_basis": "Separately reported gross issuer totals under stated issuer methods. Not uniformly GHG Protocol-comparable; missing IBM remains null.",
+  "open_material_issues": [
+    {
+      "id": "EVIC-COVERAGE",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "MSFT",
+        "AMZN",
+        "CSCO",
+        "IBM"
+      ],
+      "gap": "Historical market equity and all capital components are not verified for four issuers. Financed totals cover only Meta; complete portfolio totals remain null.",
+      "resolution": "Retrieve dated raw closing prices and outstanding shares/all equity classes, full liabilities/minority/preferred components; preserve price/share dates and reconstruct EVIC without cash netting."
+    },
+    {
+      "id": "SCOPE3-COMPARABILITY",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "IBM",
+        "META"
+      ],
+      "gap": "IBM Scope 3 for FY2023/FY2024 unavailable in reviewed table; Meta changes criteria in FY2024. Other issuer category boundaries/estimation methods differ.",
+      "resolution": "Obtain company category-level GHG Protocol series and restatements. Reconcile exclusions; do not label the heterogeneous observed statistic a comparable portfolio Scope 3 footprint."
+    },
+    {
+      "id": "GROUP-BOUNDARY",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "MSFT",
+        "CSCO"
+      ],
+      "gap": "Operational-control emissions and consolidated financial revenue have acquisition/timing differences; Cisco explicitly adds Splunk emissions in FY2025.",
+      "resolution": "Obtain like-for-like acquired-entity emissions and revenue bridge before making a fully aligned issuer comparison."
+    },
+    {
+      "id": "NATURE-VALUATION",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "META"
+      ],
+      "gap": "Mesa water withdrawal is reported but facility hazard, permit headroom, cooling capacity, outage probabilities, margins and avoided losses are not verified.",
+      "resolution": "Verify basin/local utility constraints and site operating metrics, then underwrite scenarios without adding gross potential avoided revenue to reported earnings."
+    },
+    {
+      "id": "INDEPENDENT-REVIEW",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "MSFT",
+        "AMZN",
+        "META",
+        "CSCO",
+        "IBM"
+      ],
+      "gap": "No independent accountable human review or research approval is recorded.",
+      "resolution": "Reviewer checks source entailment, component assumptions and open issues in a new approved research workflow; publication alone grants no approval."
+    }
+  ]
+}

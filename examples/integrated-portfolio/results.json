@@ -1,0 +1,428 @@
+{
+  "schema_version": "1.0.0",
+  "information_cutoff": "2026-10-08",
+  "input_sha256": "b3e3865e7df9a48b62e36d03859f3c26992897d3a79d09fac2596818f39be435",
+  "source_ledger_sha256": "a85995c63ed663e28a8d93145012c9e0db85a07ce064d5b1e933f2604d4e0724",
+  "classification": "ILLUSTRATIVE_HOLDINGS_WITH_REPORTED_ISSUER_DATA",
+  "status": "NEEDS_DATA",
+  "human_review": "NOT_RECORDED",
+  "research_approval": "NOT_GRANTED",
+  "trade_or_communication_authority": false,
+  "backtest_or_actual_holdings": false,
+  "inventories": [
+    {
+      "holdings_date": "2023-12-31",
+      "inventory": {
+        "currency": "USD",
+        "in_scope_financed_amount": 10000000.0,
+        "in_scope_market_value": 10000000.0,
+        "portfolio_market_value": 10000000.0,
+        "unmodelled_market_value": 0,
+        "scopes": {
+          "scope12_tco2e": {
+            "observed_financed_tco2e": 0.102976096686,
+            "fe_coverage_fraction": 0.2,
+            "unassessed_financed_amount": 8000000.0,
+            "complete_in_scope_financed_tco2e": null,
+            "waci_observed_contribution_full_portfolio_denominator": 9.12986409249,
+            "waci_covered_only": 9.12986409249,
+            "waci_market_coverage_of_in_scope": 1.0,
+            "waci_units": "tCO2e per million USD revenue",
+            "quality_exposure_weighted": null,
+            "quality_score_coverage_of_financed_exposure": 0.0
+          },
+          "scope3_tco2e": {
+            "observed_financed_tco2e": 15.1495947043,
+            "fe_coverage_fraction": 0.2,
+            "unassessed_financed_amount": 8000000.0,
+            "complete_in_scope_financed_tco2e": null,
+            "waci_observed_contribution_full_portfolio_denominator": 122.974547329,
+            "waci_covered_only": 136.638385922,
+            "waci_market_coverage_of_in_scope": 0.9,
+            "waci_units": "tCO2e per million USD revenue",
+            "quality_exposure_weighted": null,
+            "quality_score_coverage_of_financed_exposure": 0.0
+          }
+        },
+        "issuer_count": 5,
+        "scope12_plus_scope3_total_intentionally_not_reported": true
+      },
+      "constructed_evic_usd": {
+        "MSFT": null,
+        "AMZN": null,
+        "META": 982946560000.0,
+        "CSCO": null,
+        "IBM": null
+      }
+    },
+    {
+      "holdings_date": "2024-12-31",
+      "inventory": {
+        "currency": "USD",
+        "in_scope_financed_amount": 10000000.0,
+        "in_scope_market_value": 10000000.0,
+        "portfolio_market_value": 10000000.0,
+        "unmodelled_market_value": 0,
+        "scopes": {
+          "scope12_tco2e": {
+            "observed_financed_tco2e": 0.0773984218394,
+            "fe_coverage_fraction": 0.25,
+            "unassessed_financed_amount": 7500000.0,
+            "complete_in_scope_financed_tco2e": null,
+            "waci_observed_contribution_full_portfolio_denominator": 6.90931089647,
+            "waci_covered_only": 6.90931089647,
+            "waci_market_coverage_of_in_scope": 1.0,
+            "waci_units": "tCO2e per million USD revenue",
+            "quality_exposure_weighted": null,
+            "quality_score_coverage_of_financed_exposure": 0.0
+          },
+          "scope3_tco2e": {
+            "observed_financed_tco2e": 12.9220918322,
+            "fe_coverage_fraction": 0.25,
+            "unassessed_financed_amount": 7500000.0,
+            "complete_in_scope_financed_tco2e": null,
+            "waci_observed_contribution_full_portfolio_denominator": 98.7165428463,
+            "waci_covered_only": 116.137109231,
+            "waci_market_coverage_of_in_scope": 0.85,
+            "waci_units": "tCO2e per million USD revenue",
+            "quality_exposure_weighted": null,
+            "quality_score_coverage_of_financed_exposure": 0.0
+          }
+        },
+        "issuer_count": 5,
+        "scope12_plus_scope3_total_intentionally_not_reported": true
+      },
+      "constructed_evic_usd": {
+        "MSFT": null,
+        "AMZN": null,
+        "META": 1577099340000.0,
+        "CSCO": null,
+        "IBM": null
+      }
+    }
+  ],
+  "financed_emissions_attribution": {
+    "scope12_tco2e": {
+      "scope": "scope12_tco2e",
+      "start_observed_inventory": 0.102976096686,
+      "end_observed_inventory": 0.0773984218394,
+      "delta": -0.0255776748468,
+      "effects": {
+        "financed_amount_effect": 0.0205548742257,
+        "reported_emissions_effect": -0.00328591949542,
+        "evic_effect": -0.0428466295771,
+        "entries": 0.0,
+        "exits": 0.0,
+        "coverage_gains": 0.0,
+        "coverage_losses": 0.0,
+        "boundary_changes": 0.0
+      },
+      "reconciliation_residual": 0.0,
+      "issuer_details": [
+        {
+          "issuer_id": "AMZN",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        },
+        {
+          "issuer_id": "CSCO",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        },
+        {
+          "issuer_id": "IBM",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        },
+        {
+          "issuer_id": "META",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start_observed_fe": 0.102976096686,
+            "end_observed_fe": 0.0773984218394,
+            "delta": -0.0255776748468,
+            "financed_amount_effect": 0.0205548742257,
+            "reported_emissions_effect": -0.00328591949542,
+            "evic_effect": -0.0428466295771,
+            "reconciliation_residual": 0.0,
+            "physical_decarbonisation_proven": false
+          }
+        },
+        {
+          "issuer_id": "MSFT",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        }
+      ],
+      "restatements_fx_and_physical_changes_not_separately_identified": true
+    },
+    "scope3_tco2e": {
+      "scope": "scope3_tco2e",
+      "start_observed_inventory": 15.1495947043,
+      "end_observed_inventory": 12.9220918322,
+      "delta": -2.2275028721,
+      "effects": {
+        "financed_amount_effect": 0.0,
+        "reported_emissions_effect": 0.0,
+        "evic_effect": 0.0,
+        "entries": 0.0,
+        "exits": 0.0,
+        "coverage_gains": 0.0,
+        "coverage_losses": 0.0,
+        "boundary_changes": -2.2275028721
+      },
+      "reconciliation_residual": 0.0,
+      "issuer_details": [
+        {
+          "issuer_id": "AMZN",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        },
+        {
+          "issuer_id": "CSCO",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        },
+        {
+          "issuer_id": "IBM",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        },
+        {
+          "issuer_id": "META",
+          "bucket": "boundary_changes",
+          "observed_inventory_delta": -2.2275028721
+        },
+        {
+          "issuer_id": "MSFT",
+          "bucket": "unassessed_both_periods",
+          "observed_inventory_delta": 0
+        }
+      ],
+      "restatements_fx_and_physical_changes_not_separately_identified": true
+    }
+  },
+  "waci_attribution": {
+    "scope12_tco2e": {
+      "scope": "scope12_tco2e",
+      "start_observed_full_denominator_contribution": 9.12986409249,
+      "end_observed_full_denominator_contribution": 6.90931089647,
+      "delta": -2.22055319602,
+      "effects": {
+        "holdings_weight_effect": -1.27708283702,
+        "reported_emissions_effect": -0.174873489793,
+        "revenue_denominator_effect": -0.768596869203,
+        "coverage_changes": 0.0,
+        "boundary_changes": 0.0,
+        "entries": 0.0,
+        "exits": 0.0
+      },
+      "reconciliation_residual": 0.0,
+      "issuer_details": [
+        {
+          "issuer_id": "AMZN",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 7.38537018189,
+            "end": 5.62105088258,
+            "delta": -1.76431929931,
+            "holdings_weight_effect": -1.44253227855,
+            "reported_emissions_effect": 0.354147480073,
+            "revenue_denominator_effect": -0.67593450084,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "CSCO",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 0.319276992175,
+            "end": 0.170009107299,
+            "delta": -0.149267884876,
+            "holdings_weight_effect": 0.0,
+            "reported_emissions_effect": -0.163512642619,
+            "revenue_denominator_effect": 0.0142447577424,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "IBM",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 0.588425476883,
+            "end": 0.633435851672,
+            "delta": 0.0450103747891,
+            "holdings_weight_effect": 0.252489226553,
+            "reported_emissions_effect": -0.1985302197,
+            "revenue_denominator_effect": -0.00894863206414,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "META",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 0.0750322456302,
+            "end": 0.0742031963332,
+            "delta": -0.000829049297008,
+            "holdings_weight_effect": 0.0167795212047,
+            "reported_emissions_effect": -0.00269788546789,
+            "revenue_denominator_effect": -0.0149106850338,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "MSFT",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 0.761759195904,
+            "end": 0.410611858585,
+            "delta": -0.351147337319,
+            "holdings_weight_effect": -0.103819306232,
+            "reported_emissions_effect": -0.16428022208,
+            "revenue_denominator_effect": -0.0830478090074,
+            "reconciliation_residual": 0.0
+          }
+        }
+      ],
+      "physical_decarbonisation_proven": false,
+      "fx_of_global_revenues_not_separately_identified": true
+    },
+    "scope3_tco2e": {
+      "scope": "scope3_tco2e",
+      "start_observed_full_denominator_contribution": 122.974547329,
+      "end_observed_full_denominator_contribution": 98.7165428463,
+      "delta": -24.2580044831,
+      "effects": {
+        "holdings_weight_effect": -7.50956293435,
+        "reported_emissions_effect": -16.9980055013,
+        "revenue_denominator_effect": -1.100504615,
+        "coverage_changes": 0.0,
+        "boundary_changes": 1.35006856754,
+        "entries": 0.0,
+        "exits": 0.0
+      },
+      "reconciliation_residual": 0.0,
+      "issuer_details": [
+        {
+          "issuer_id": "AMZN",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 20.6164043947,
+            "end": 15.7753084446,
+            "delta": -4.8410959501,
+            "holdings_weight_effect": -4.03774619305,
+            "reported_emissions_effect": 1.0885375177,
+            "revenue_denominator_effect": -1.89188727475,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "CSCO",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 68.1069712972,
+            "end": 55.1113125662,
+            "delta": -12.995658731,
+            "holdings_weight_effect": 0.0,
+            "reported_emissions_effect": -16.5624885284,
+            "revenue_denominator_effect": 3.56682979738,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "IBM",
+          "bucket": "unassessed_both_periods",
+          "observed_delta": 0
+        },
+        {
+          "issuer_id": "META",
+          "bucket": "boundary_changes",
+          "observed_delta": 1.35006856754
+        },
+        {
+          "issuer_id": "MSFT",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 23.212608829,
+            "end": 15.4412904594,
+            "delta": -7.77131836957,
+            "holdings_weight_effect": -3.4718167413,
+            "reported_emissions_effect": -1.52405449064,
+            "revenue_denominator_effect": -2.77544713763,
+            "reconciliation_residual": 0.0
+          }
+        }
+      ],
+      "physical_decarbonisation_proven": false,
+      "fx_of_global_revenues_not_separately_identified": true
+    }
+  },
+  "calculated_float_reporting": {
+    "significant_digits": 12,
+    "raw_reconciliation_absolute_tolerance": 1e-09,
+    "residual_reporting": "Zero only after raw residual passes tolerance",
+    "input_and_source_hashes": "Exact canonical JSON, without report rounding"
+  },
+  "open_material_issues": [
+    {
+      "id": "EVIC-COVERAGE",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "MSFT",
+        "AMZN",
+        "CSCO",
+        "IBM"
+      ],
+      "gap": "Historical market equity and all capital components are not verified for four issuers. Financed totals cover only Meta; complete portfolio totals remain null.",
+      "resolution": "Retrieve dated raw closing prices and outstanding shares/all equity classes, full liabilities/minority/preferred components; preserve price/share dates and reconstruct EVIC without cash netting."
+    },
+    {
+      "id": "SCOPE3-COMPARABILITY",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "IBM",
+        "META"
+      ],
+      "gap": "IBM Scope 3 for FY2023/FY2024 unavailable in reviewed table; Meta changes criteria in FY2024. Other issuer category boundaries/estimation methods differ.",
+      "resolution": "Obtain company category-level GHG Protocol series and restatements. Reconcile exclusions; do not label the heterogeneous observed statistic a comparable portfolio Scope 3 footprint."
+    },
+    {
+      "id": "GROUP-BOUNDARY",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "MSFT",
+        "CSCO"
+      ],
+      "gap": "Operational-control emissions and consolidated financial revenue have acquisition/timing differences; Cisco explicitly adds Splunk emissions in FY2025.",
+      "resolution": "Obtain like-for-like acquired-entity emissions and revenue bridge before making a fully aligned issuer comparison."
+    },
+    {
+      "id": "NATURE-VALUATION",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "META"
+      ],
+      "gap": "Mesa water withdrawal is reported but facility hazard, permit headroom, cooling capacity, outage probabilities, margins and avoided losses are not verified.",
+      "resolution": "Verify basin/local utility constraints and site operating metrics, then underwrite scenarios without adding gross potential avoided revenue to reported earnings."
+    },
+    {
+      "id": "INDEPENDENT-REVIEW",
+      "severity": "MATERIAL",
+      "status": "OPEN",
+      "affected_issuers": [
+        "MSFT",
+        "AMZN",
+        "META",
+        "CSCO",
+        "IBM"
+      ],
+      "gap": "No independent accountable human review or research approval is recorded.",
+      "resolution": "Reviewer checks source entailment, component assumptions and open issues in a new approved research workflow; publication alone grants no approval."
+    }
+  ]
+}

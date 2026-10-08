@@ -1,0 +1,97 @@
+{
+  "schema_version": "1.0.0",
+  "information_cutoff": "2026-10-08",
+  "case_id": "illustrative-five-issuer-FY2023-FY2024",
+  "status": "NEEDS_DATA",
+  "research_approval": "NOT_GRANTED",
+  "human_review": "NOT_RECORDED",
+  "communication_sent": false,
+  "trade_or_voting_authority": false,
+  "portfolio_status": "Illustrative weights; no actual account positions or shareholder authority verified",
+  "nature_handoff": {
+    "target_repository": "https://github.com/hhfinai/Nature-and-Biodiversity-Investment-Agent",
+    "location": {
+      "issuer_id": "META",
+      "site_label": "Mesa, Arizona, United States",
+      "precise_coordinates": null,
+      "coordinates_status": "NOT_VERIFIED"
+    },
+    "fact": {
+      "classification": "REPORTED_FACT",
+      "metric": "FY2024 site water withdrawal",
+      "value": 57,
+      "unit": "megalitres",
+      "source_id": "S-META-E",
+      "locator": "Printed I, Data Center Water Withdrawal (ML), Mesa, AZ row, 2024 column"
+    },
+    "limits": [
+      "Withdrawal is not consumption. Prior-year dashes remain unavailable, not zero.",
+      "Group high/extremely high baseline water-stress withdrawal is not assigned to Mesa. The site hazard classification is not verified.",
+      "A city label is insufficient for a geospatial intersection or site-level biodiversity conclusion. No precise coordinate, basin overlay or nature score is invented."
+    ],
+    "requests": [
+      "Verify the exact facility boundary, catchment and utility service area from public permits or issuer evidence.",
+      "Obtain dated local water-supply restrictions, permit and contractual headroom, basin hazard assumptions and ecological dependencies.",
+      "Reconcile site withdrawal, consumption, capacity utilisation, cooling configuration and contingency limits before estimating operational disruption."
+    ],
+    "financial_mechanism": {
+      "classification": "INFERENCE_TO_TEST",
+      "chain": "A binding site water or cooling constraint could limit available compute capacity or defer expansion, affecting operating cash flow; resilience measures could change capex and operating costs.",
+      "valuation_status": "BLOCKED",
+      "required_inputs": [
+        "Constraint timing and probability",
+        "Usable cooling/compute headroom",
+        "Incremental operating costs",
+        "Resilience capex, lifetime and hurdle rate",
+        "Contribution margin per constrained unit of service",
+        "Avoided downtime attributable to the intervention"
+      ],
+      "decision_rule": "Compare discounted incremental margin and avoided direct costs with incremental capex and opex under dated downside/base/upside scenarios. Do not add gross potentially avoided revenue to reported earnings or infer an issuer valuation premium."
+    }
+  },
+  "stewardship_handoff": {
+    "target_repository": "https://github.com/hhfinai/Stewardship-and-Controversy-Assessment",
+    "classification": "PROPOSED_RESEARCH_MILESTONES_NOT_SENT",
+    "issuer_id": "META",
+    "objective": "Resolve site-specific water resilience evidence and the Scope 3 basis bridge before a research decision",
+    "milestones": [
+      {
+        "due_date": "2026-11-07",
+        "owner": "Proposed analyst owner; unassigned",
+        "request": "Review public permits and disclosures; produce verified site/catchment evidence and a gap register.",
+        "evidence_required": "Dated primary site documents, permit/utility limits and method provenance",
+        "status": "PROPOSED"
+      },
+      {
+        "due_date": "2027-01-06",
+        "owner": "Proposed stewardship owner; unassigned",
+        "request": "Prepare a draft evidence request for site withdrawal/consumption, operational headroom and the FY2023\u2013FY2024 Scope 3 methodology bridge. Seek separate authorization before any contact.",
+        "evidence_required": "Reviewer-approved draft plus explicit communication authority; no contact presumed",
+        "status": "PROPOSED"
+      },
+      {
+        "due_date": "2027-04-06",
+        "owner": "Proposed research committee; unassigned",
+        "request": "Assess disclosed evidence against a financial scenario and escalate unresolved material gaps for review.",
+        "evidence_required": "Scenario assumptions, incremental cash-flow bridge, independent source review and open-issue disposition",
+        "status": "PROPOSED"
+      }
+    ],
+    "escalation": "A missed milestone triggers an internal evidence-gap review; no vote, divestment or communication occurs automatically.",
+    "evidence_standard": "Receipt of a response does not close an issue without source and method review."
+  },
+  "carbon_handoff": {
+    "missing_evic_issuers": [
+      "MSFT",
+      "AMZN",
+      "CSCO",
+      "IBM"
+    ],
+    "requests": [
+      "Verify historical outstanding shares, prices and all capital components at each portfolio date.",
+      "Resolve Microsoft/Cisco acquired-entity reporting boundaries and IBM historical Scope 3 availability.",
+      "Independently check the Meta Class B valuation convention, absence of separately reported preferred/minority equity, and total-liabilities EVIC interpretation."
+    ],
+    "closure_authority": "Accountable human research reviewer; none recorded"
+  }
+}

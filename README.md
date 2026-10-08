@@ -2,9 +2,13 @@
 
 [![Validate research workflow](https://github.com/HHFinAi/Portfolio-Carbon-Accounting-and-Attribution/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/HHFinAi/Portfolio-Carbon-Accounting-and-Attribution/actions/workflows/validate.yml)
 
-**Institutional-quality buy-side research, designed to support tradable investment decisions through a traceable, auditable workflow.**
+**Public-data portfolio research by HHFinAi, with reproducible carbon accounting and explicit investment questions.**
 
 What emissions are financed by the scoped holdings, how complete is the data, and why did the measured inventory change?
+
+## Start with the integrated research case
+
+The [five-issuer portfolio case](examples/integrated-portfolio/README.md) connects two annual public-data vintages, illustrative weights, carbon coverage and attribution with location-level nature evidence, financial mechanisms and proposed stewardship. Read the investment memo before inspecting the workflow machinery. Holdings are model assumptions; missing Scope 3 or EVIC data remain visible, and no issuer engagement or portfolio performance is claimed.
 
 **HHFinAi · v0.2.0 · Python 3.10+ · 10 research stages · 3 named routes · Human review · No autonomous trading**
 

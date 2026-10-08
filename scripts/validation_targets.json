@@ -1,0 +1,12 @@
+{
+  "version": "1",
+  "checks": [
+    {
+      "name": "integrated-portfolio",
+      "arguments": [
+        "examples/integrated-portfolio/model.py",
+        "--check"
+      ]
+    }
+  ]
+}

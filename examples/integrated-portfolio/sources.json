@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0.0",
+  "retrieved_on": "2026-10-08",
+  "review_method": "Session AI reviewed primary publisher tables, locators and method notes through web retrieval. No independent human review or authenticated assurance attestation.",
+  "raw_document_hashes": "NOT_RECORDED: source PDFs are linked, not republished; provenance.json hashes authored extracts and calculations, not original source bytes.",
+  "sources": [
+    {
+      "id": "S-MS-E",
+      "publisher": "Microsoft",
+      "title": "2025 Environmental Data Fact Sheet",
+      "url": "https://cdn-dynmedia-1.microsoft.com/is/content/microsoftcorp/microsoft/msc/documents/presentations/CSR/2025-Microsoft-Environmental-Data-Fact-Sheet-PDF.pdf",
+      "publication_date": null,
+      "locator": "Printed p 3 Table 1A FY23/FY24; p 8 inventory boundary/recalculation policy",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Both periods use the restated GHG Protocol table; do not mix with Table 1B management criteria. FY24 scope excludes discontinued PC accessories; acquisition inclusion can lag consolidated financials.",
+      "publication_year": 2025,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-MS-F",
+      "publisher": "Microsoft",
+      "title": "2024 Annual Report",
+      "url": "https://www.microsoft.com/investor/reports/ar24/index.html",
+      "publication_date": null,
+      "locator": "Income Statements, Total revenue, years ended June 30 FY2023/FY2024",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Consolidated GAAP revenue. No historical year-end share price was located in this report.",
+      "publication_year": 2024,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-AM-E",
+      "publisher": "Amazon",
+      "title": "2024 Sustainability Report",
+      "url": "https://sustainability.aboutamazon.com/2024-amazon-sustainability-report.pdf",
+      "publication_date": null,
+      "locator": "Printed p 50 Amazon Carbon Footprint Data Tables, 2023/2024 columns",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "MMT CO2e converted explicitly by 1,000,000. FY2023 is recalculated; market-based Scope 2/3. Revenue denominator below is net sales, not Amazon gross merchandise sales.",
+      "publication_year": 2025,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-AM-F",
+      "publisher": "Amazon",
+      "title": "2024 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1018724/000101872425000004/amzn-20241231.htm",
+      "publication_date": null,
+      "locator": "Item7 Net Sales table; Consolidated Statements of Operations, Net sales",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Year-ended December 31 consolidated net sales; no end-year closing price was found in this filing.",
+      "publication_year": 2025,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-META-E",
+      "publisher": "Meta",
+      "title": "2025 Environmental Data Index",
+      "url": "https://sustainability.atmeta.com/wp-content/uploads/2025/10/Meta_2025-Environmental-Data-Index.pdf",
+      "publication_date": null,
+      "locator": "Printed B Scope 1/2/3; C operational total; E Scope 3 methodology footnote; I Mesa water withdrawal; J water stress",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Gross reported carbon values before removal credits. Scope 3 switches reporting criteria in FY2024, so its difference is assigned to a boundary/methodology bucket. Site withdrawal is not site consumption or outage evidence.",
+      "publication_year": 2025,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-META-F24",
+      "publisher": "Meta",
+      "title": "2024 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680125000017/meta-20241231.htm",
+      "publication_date": null,
+      "locator": "p 57 closing price; p 86 balance sheet shares/total liabilities; p 87 revenue; Note 4 identical liquidation/dividend rights; Note 13 Class B conversion",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Rounded year-end outstanding shares, not diluted weighted-average shares or cover-page nonaffiliate market value. No preferred or minority equity component appears in the reviewed balance sheet; treating these as absent is an inference.",
+      "publication_year": 2025,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-META-F23",
+      "publisher": "Meta",
+      "title": "2023 Form 10-K",
+      "url": "https://www.sec.gov/Archives/edgar/data/1326801/000132680124000012/meta-20231231.htm",
+      "publication_date": null,
+      "locator": "Item5 Holders of Record: December 31, 2023 closing price USD 353.96",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Use reported historical unadjusted price, rather than a dividend-adjusted web chart.",
+      "publication_year": 2024,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-CS-E",
+      "publisher": "Cisco",
+      "title": "Purpose Reporting Hub Data and Assurance",
+      "url": "https://www.cisco.com/c/m/en_us/about/purpose/reporting-hub/governance/data-and-assurances.html",
+      "publication_date": null,
+      "locator": "Emissions Data: Scope 1/2 GHG total and Scope 3 total, FY23/FY24 columns; accompanying historical-data notes",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Living page reviewed October 8, 2026: historical figures may be restated. Splunk emissions are included beginning FY2025; FY2024 financial revenue includes acquired operations. Reported Scope 1+2 subtotal is used despite rounding differences.",
+      "publication_year": null,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-CS-F",
+      "publisher": "Cisco",
+      "title": "Fiscal 2024 Earnings Release",
+      "url": "https://investor.cisco.com/news/news-details/2024/CISCO-REPORTS-FOURTH-QUARTER-AND-FISCAL-YEAR-2024-EARNINGS/default.aspx",
+      "publication_date": null,
+      "locator": "Consolidated Statements of Operations, fiscal-year total revenue columns July 29, 2023 and July 27, 2024",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Fiscal years differ from calendar years. Consolidated GAAP revenue; acquisition boundary alignment remains an open issue.",
+      "publication_year": 2024,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-IBM-E",
+      "publisher": "IBM",
+      "title": "Data and Policies environmental table",
+      "url": "https://www.ibm.com/responsibility/data-and-policies",
+      "publication_date": null,
+      "locator": "Environment, columns 2023/2024: Total operational GHG emissions; Scope 3 indirect emissions row; footnotes 1/5/6/7",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Living page reviewed October 8, 2026; operational totals are rounded to nearest thousand. Scope 3 cells for these years are unavailable; do not use FY2025 partial-category total for FY2024.",
+      "publication_year": null,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-IBM-F",
+      "publisher": "IBM",
+      "title": "2024 Annual Report filed with SEC",
+      "url": "https://www.sec.gov/Archives/edgar/data/51143/000110465925022191/tm2429998d6_ars.pdf",
+      "publication_date": null,
+      "locator": "Printed p 46 Consolidated Statement of Income, Total revenue 2024/2023",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Consolidated revenue; annual report retrieved but historical market capitalization/closing prices were not found.",
+      "publication_year": 2025,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    },
+    {
+      "id": "S-PCAF",
+      "publisher": "PCAF",
+      "title": "Part A Third Edition 2025",
+      "url": "https://carbonaccountingfinancials.com/files/standard-launch-2025/PCAF-PartA-2025-V3-15012026.pdf",
+      "publication_date": null,
+      "locator": "Printed pp 41\u201342 numerator/EVIC; p 42 footnotes 45\u201346; p 44 financed-emissions equation",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Use market equity and balance-sheet liabilities, no cash deduction. No claim of complete PCAF conformity or independent assurance is made.",
+      "publication_year": 2025,
+      "publication_date_status": "Cover identifies Third Edition December 2025; download filename indicates V3 dated 15 January 2026, without a verified publication day",
+      "publication_period": "2025-12"
+    },
+    {
+      "id": "S-META-W",
+      "publisher": "Meta",
+      "title": "Water stewardship",
+      "url": "https://sustainability.atmeta.com/water/",
+      "publication_date": null,
+      "locator": "Every drop matters; Building long-term resilience",
+      "status": "REVIEWED_SCOPE_ONLY",
+      "limits": "Company water-dependency/resilience context; no project-specific financial return or basin hazard magnitude is provided.",
+      "publication_year": null,
+      "publication_date_status": "Exact publication date not independently established in this ledger"
+    }
+  ],
+  "retrieval_gaps": [
+    {
+      "issuer_id": "MSFT",
+      "attempt": "Reviewed 2024 issuer annual report; searched closing price and market capitalization. SEC filing also attempted.",
+      "result": "No compatible year-end market equity series verified. EVIC remains null; public financial debt is not a replacement for market equity."
+    },
+    {
+      "issuer_id": "AMZN",
+      "attempt": "Reviewed 2024 SEC 10-K and searched closing price.",
+      "result": "No compatible historical market equity series verified; half-year nonaffiliate cover-page value rejected as EVIC."
+    },
+    {
+      "issuer_id": "CSCO",
+      "attempt": "Reviewed issuer earnings release and attempted issuer annual-report PDF; searched historical year-end market capitalization/closing price.",
+      "result": "Annual-report direct retrieval failed; indexed cover-page market value concerns nonaffiliates at January 26, 2024, not the portfolio dates. EVIC null."
+    },
+    {
+      "issuer_id": "IBM",
+      "attempt": "Retrieved annual-report PDF; searched market capitalization, closing price and 219.83; direct issuer PDF paths were inaccessible.",
+      "result": "No historical end-year price verified. Pension asset valuation text is not issuer market equity; total-return chart cannot substitute for price. EVIC null."
+    },
+    {
+      "issuer_id": "META",
+      "attempt": "Reviewed 2023/2024 SEC filings, balance-sheet shares/liabilities and identical economic rights.",
+      "result": "Constructed dated EVIC from disclosed components with explicit Class B valuation convention and equity-component inference."
+    }
+  ]
+}

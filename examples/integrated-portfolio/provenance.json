@@ -1,0 +1,16 @@
+{
+  "hash_method": "SHA256 exact bytes; canonical JSON digests also recorded in results",
+  "files": {
+    "model.py": "5c760448a378acefc778596fb9a5865a6fc21c1ba0989ceedabcbb9bb6b72cd6",
+    "inputs.json": "4a47d483f2db1044081ea67bbaac0ed0ee042d48cfbc4c5d5ecd02434d673fe7",
+    "sources.json": "8c406113e0eee095b9b5153ead53bb6bdfe94436d54327ddcdb0a5414d385b8c",
+    "results.json": "f316bd37837f382b90cc5968abb099257db2007675a937621411205f5ac7782b",
+    "handoffs.json": "91d59b878f12ca7550fc419d0c82d8821215735b9cc56fe23110395853298289"
+  },
+  "canonical_input_sha256": "b3e3865e7df9a48b62e36d03859f3c26992897d3a79d09fac2596818f39be435",
+  "canonical_results_sha256": "5646293915aa261fc669512741054f7f7080b5d88b19066ca06e781e2955779c",
+  "canonical_source_ledger_sha256": "a85995c63ed663e28a8d93145012c9e0db85a07ce064d5b1e933f2604d4e0724",
+  "canonical_handoffs_sha256": "8bb58fc8d972eb60ab36c49df94d93c87087c8eb3d85deb3a6c0e9d3505bf892",
+  "human_approval": "NOT_GRANTED",
+  "recordkeeping_certification": "NOT_CLAIMED"
+}

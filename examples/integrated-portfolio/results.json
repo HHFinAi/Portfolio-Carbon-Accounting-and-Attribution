@@ -20,24 +20,24 @@
         "unmodelled_market_value": 0,
         "scopes": {
           "scope12_tco2e": {
-            "observed_financed_tco2e": 0.10297609668627357,
+            "observed_financed_tco2e": 0.102976096686,
             "fe_coverage_fraction": 0.2,
             "unassessed_financed_amount": 8000000.0,
             "complete_in_scope_financed_tco2e": null,
-            "waci_observed_contribution_full_portfolio_denominator": 9.129864092486727,
-            "waci_covered_only": 9.129864092486727,
+            "waci_observed_contribution_full_portfolio_denominator": 9.12986409249,
+            "waci_covered_only": 9.12986409249,
             "waci_market_coverage_of_in_scope": 1.0,
             "waci_units": "tCO2e per million USD revenue",
             "quality_exposure_weighted": null,
             "quality_score_coverage_of_financed_exposure": 0.0
           },
           "scope3_tco2e": {
-            "observed_financed_tco2e": 15.149594704314342,
+            "observed_financed_tco2e": 15.1495947043,
             "fe_coverage_fraction": 0.2,
             "unassessed_financed_amount": 8000000.0,
             "complete_in_scope_financed_tco2e": null,
-            "waci_observed_contribution_full_portfolio_denominator": 122.97454732949417,
-            "waci_covered_only": 136.6383859216602,
+            "waci_observed_contribution_full_portfolio_denominator": 122.974547329,
+            "waci_covered_only": 136.638385922,
             "waci_market_coverage_of_in_scope": 0.9,
             "waci_units": "tCO2e per million USD revenue",
             "quality_exposure_weighted": null,
@@ -65,24 +65,24 @@
         "unmodelled_market_value": 0,
         "scopes": {
           "scope12_tco2e": {
-            "observed_financed_tco2e": 0.07739842183942579,
+            "observed_financed_tco2e": 0.0773984218394,
             "fe_coverage_fraction": 0.25,
             "unassessed_financed_amount": 7500000.0,
             "complete_in_scope_financed_tco2e": null,
-            "waci_observed_contribution_full_portfolio_denominator": 6.909310896469366,
-            "waci_covered_only": 6.909310896469367,
+            "waci_observed_contribution_full_portfolio_denominator": 6.90931089647,
+            "waci_covered_only": 6.90931089647,
             "waci_market_coverage_of_in_scope": 1.0,
             "waci_units": "tCO2e per million USD revenue",
             "quality_exposure_weighted": null,
             "quality_score_coverage_of_financed_exposure": 0.0
           },
           "scope3_tco2e": {
-            "observed_financed_tco2e": 12.922091832211406,
+            "observed_financed_tco2e": 12.9220918322,
             "fe_coverage_fraction": 0.25,
             "unassessed_financed_amount": 7500000.0,
             "complete_in_scope_financed_tco2e": null,
-            "waci_observed_contribution_full_portfolio_denominator": 98.71654284634609,
-            "waci_covered_only": 116.1371092309954,
+            "waci_observed_contribution_full_portfolio_denominator": 98.7165428463,
+            "waci_covered_only": 116.137109231,
             "waci_market_coverage_of_in_scope": 0.85,
             "waci_units": "tCO2e per million USD revenue",
             "quality_exposure_weighted": null,
@@ -104,20 +104,20 @@
   "financed_emissions_attribution": {
     "scope12_tco2e": {
       "scope": "scope12_tco2e",
-      "start_observed_inventory": 0.10297609668627357,
-      "end_observed_inventory": 0.07739842183942579,
-      "delta": -0.02557767484684778,
+      "start_observed_inventory": 0.102976096686,
+      "end_observed_inventory": 0.0773984218394,
+      "delta": -0.0255776748468,
       "effects": {
-        "financed_amount_effect": 0.020554874225711946,
-        "reported_emissions_effect": -0.0032859194954176696,
-        "evic_effect": -0.042846629577142054,
+        "financed_amount_effect": 0.0205548742257,
+        "reported_emissions_effect": -0.00328591949542,
+        "evic_effect": -0.0428466295771,
         "entries": 0.0,
         "exits": 0.0,
         "coverage_gains": 0.0,
         "coverage_losses": 0.0,
         "boundary_changes": 0.0
       },
-      "reconciliation_residual": -3.469446951953614e-18,
+      "reconciliation_residual": 0.0,
       "issuer_details": [
         {
           "issuer_id": "AMZN",
@@ -138,13 +138,13 @@
           "issuer_id": "META",
           "bucket": "comparable_reported_boundary",
           "bridge": {
-            "start_observed_fe": 0.10297609668627357,
-            "end_observed_fe": 0.07739842183942579,
-            "delta": -0.02557767484684778,
-            "financed_amount_effect": 0.020554874225711946,
-            "reported_emissions_effect": -0.0032859194954176696,
-            "evic_effect": -0.042846629577142054,
-            "reconciliation_residual": -3.469446951953614e-18,
+            "start_observed_fe": 0.102976096686,
+            "end_observed_fe": 0.0773984218394,
+            "delta": -0.0255776748468,
+            "financed_amount_effect": 0.0205548742257,
+            "reported_emissions_effect": -0.00328591949542,
+            "evic_effect": -0.0428466295771,
+            "reconciliation_residual": 0.0,
             "physical_decarbonisation_proven": false
           }
         },
@@ -158,9 +158,9 @@
     },
     "scope3_tco2e": {
       "scope": "scope3_tco2e",
-      "start_observed_inventory": 15.149594704314342,
-      "end_observed_inventory": 12.922091832211406,
-      "delta": -2.227502872102937,
+      "start_observed_inventory": 15.1495947043,
+      "end_observed_inventory": 12.9220918322,
+      "delta": -2.2275028721,
       "effects": {
         "financed_amount_effect": 0.0,
         "reported_emissions_effect": 0.0,
@@ -169,7 +169,7 @@
         "exits": 0.0,
         "coverage_gains": 0.0,
         "coverage_losses": 0.0,
-        "boundary_changes": -2.227502872102937
+        "boundary_changes": -2.2275028721
       },
       "reconciliation_residual": 0.0,
       "issuer_details": [
@@ -191,7 +191,7 @@
         {
           "issuer_id": "META",
           "bucket": "boundary_changes",
-          "observed_inventory_delta": -2.227502872102937
+          "observed_inventory_delta": -2.2275028721
         },
         {
           "issuer_id": "MSFT",
@@ -205,100 +205,15 @@
   "waci_attribution": {
     "scope12_tco2e": {
       "scope": "scope12_tco2e",
-      "start_observed_full_denominator_contribution": 9.129864092486727,
-      "end_observed_full_denominator_contribution": 6.909310896469366,
-      "delta": -2.2205531960173612,
+      "start_observed_full_denominator_contribution": 9.12986409249,
+      "end_observed_full_denominator_contribution": 6.90931089647,
+      "delta": -2.22055319602,
       "effects": {
-        "holdings_weight_effect": -1.2770828370215148,
-        "reported_emissions_effect": -0.1748734897933189,
-        "revenue_denominator_effect": -0.768596869202528,
+        "holdings_weight_effect": -1.27708283702,
+        "reported_emissions_effect": -0.174873489793,
+        "revenue_denominator_effect": -0.768596869203,
         "coverage_changes": 0.0,
         "boundary_changes": 0.0,
-        "entries": 0.0,
-        "exits": 0.0
-      },
-      "reconciliation_residual": 4.440892098500626e-16,
-      "issuer_details": [
-        {
-          "issuer_id": "AMZN",
-          "bucket": "comparable_reported_boundary",
-          "bridge": {
-            "start": 7.3853701818941,
-            "end": 5.621050882580229,
-            "delta": -1.764319299313871,
-            "holdings_weight_effect": -1.4425322785476165,
-            "reported_emissions_effect": 0.3541474800732569,
-            "revenue_denominator_effect": -0.6759345008395115,
-            "reconciliation_residual": 0.0
-          }
-        },
-        {
-          "issuer_id": "CSCO",
-          "bucket": "comparable_reported_boundary",
-          "bridge": {
-            "start": 0.319276992175164,
-            "end": 0.1700091072988495,
-            "delta": -0.14926788487631448,
-            "holdings_weight_effect": 0.0,
-            "reported_emissions_effect": -0.1635126426187092,
-            "revenue_denominator_effect": 0.014244757742394724,
-            "reconciliation_residual": 0.0
-          }
-        },
-        {
-          "issuer_id": "IBM",
-          "bucket": "comparable_reported_boundary",
-          "bridge": {
-            "start": 0.5884254768832848,
-            "end": 0.63343585167243,
-            "delta": 0.04501037478914516,
-            "holdings_weight_effect": 0.2524892265530407,
-            "reported_emissions_effect": -0.19853021969975335,
-            "revenue_denominator_effect": -0.008948632064142148,
-            "reconciliation_residual": -2.7755575615628914e-17
-          }
-        },
-        {
-          "issuer_id": "META",
-          "bucket": "comparable_reported_boundary",
-          "bridge": {
-            "start": 0.07503224563016116,
-            "end": 0.07420319633315299,
-            "delta": -0.0008290492970081664,
-            "holdings_weight_effect": 0.016779521204714844,
-            "reported_emissions_effect": -0.002697885467889185,
-            "revenue_denominator_effect": -0.014910685033833826,
-            "reconciliation_residual": 4.336808689942018e-19
-          }
-        },
-        {
-          "issuer_id": "MSFT",
-          "bucket": "comparable_reported_boundary",
-          "bridge": {
-            "start": 0.7617591959040181,
-            "end": 0.4106118585847048,
-            "delta": -0.3511473373193133,
-            "holdings_weight_effect": -0.1038193062316539,
-            "reported_emissions_effect": -0.16428022208022408,
-            "revenue_denominator_effect": -0.08304780900743533,
-            "reconciliation_residual": 0.0
-          }
-        }
-      ],
-      "physical_decarbonisation_proven": false,
-      "fx_of_global_revenues_not_separately_identified": true
-    },
-    "scope3_tco2e": {
-      "scope": "scope3_tco2e",
-      "start_observed_full_denominator_contribution": 122.97454732949417,
-      "end_observed_full_denominator_contribution": 98.71654284634609,
-      "delta": -24.258004483148085,
-      "effects": {
-        "holdings_weight_effect": -7.509562934347512,
-        "reported_emissions_effect": -16.998005501345155,
-        "revenue_denominator_effect": -1.1005046149991504,
-        "coverage_changes": 0.0,
-        "boundary_changes": 1.3500685675437332,
         "entries": 0.0,
         "exits": 0.0
       },
@@ -308,12 +223,12 @@
           "issuer_id": "AMZN",
           "bucket": "comparable_reported_boundary",
           "bridge": {
-            "start": 20.616404394686707,
-            "end": 15.775308444586564,
-            "delta": -4.841095950100144,
-            "holdings_weight_effect": -4.0377461930463925,
-            "reported_emissions_effect": 1.0885375176988539,
-            "revenue_denominator_effect": -1.8918872747526054,
+            "start": 7.38537018189,
+            "end": 5.62105088258,
+            "delta": -1.76431929931,
+            "holdings_weight_effect": -1.44253227855,
+            "reported_emissions_effect": 0.354147480073,
+            "revenue_denominator_effect": -0.67593450084,
             "reconciliation_residual": 0.0
           }
         },
@@ -321,12 +236,97 @@
           "issuer_id": "CSCO",
           "bucket": "comparable_reported_boundary",
           "bridge": {
-            "start": 68.1069712972385,
-            "end": 55.111312566213776,
-            "delta": -12.995658731024726,
+            "start": 0.319276992175,
+            "end": 0.170009107299,
+            "delta": -0.149267884876,
             "holdings_weight_effect": 0.0,
-            "reported_emissions_effect": -16.562488528403524,
-            "revenue_denominator_effect": 3.566829797378798,
+            "reported_emissions_effect": -0.163512642619,
+            "revenue_denominator_effect": 0.0142447577424,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "IBM",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 0.588425476883,
+            "end": 0.633435851672,
+            "delta": 0.0450103747891,
+            "holdings_weight_effect": 0.252489226553,
+            "reported_emissions_effect": -0.1985302197,
+            "revenue_denominator_effect": -0.00894863206414,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "META",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 0.0750322456302,
+            "end": 0.0742031963332,
+            "delta": -0.000829049297008,
+            "holdings_weight_effect": 0.0167795212047,
+            "reported_emissions_effect": -0.00269788546789,
+            "revenue_denominator_effect": -0.0149106850338,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "MSFT",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 0.761759195904,
+            "end": 0.410611858585,
+            "delta": -0.351147337319,
+            "holdings_weight_effect": -0.103819306232,
+            "reported_emissions_effect": -0.16428022208,
+            "revenue_denominator_effect": -0.0830478090074,
+            "reconciliation_residual": 0.0
+          }
+        }
+      ],
+      "physical_decarbonisation_proven": false,
+      "fx_of_global_revenues_not_separately_identified": true
+    },
+    "scope3_tco2e": {
+      "scope": "scope3_tco2e",
+      "start_observed_full_denominator_contribution": 122.974547329,
+      "end_observed_full_denominator_contribution": 98.7165428463,
+      "delta": -24.2580044831,
+      "effects": {
+        "holdings_weight_effect": -7.50956293435,
+        "reported_emissions_effect": -16.9980055013,
+        "revenue_denominator_effect": -1.100504615,
+        "coverage_changes": 0.0,
+        "boundary_changes": 1.35006856754,
+        "entries": 0.0,
+        "exits": 0.0
+      },
+      "reconciliation_residual": 0.0,
+      "issuer_details": [
+        {
+          "issuer_id": "AMZN",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 20.6164043947,
+            "end": 15.7753084446,
+            "delta": -4.8410959501,
+            "holdings_weight_effect": -4.03774619305,
+            "reported_emissions_effect": 1.0885375177,
+            "revenue_denominator_effect": -1.89188727475,
+            "reconciliation_residual": 0.0
+          }
+        },
+        {
+          "issuer_id": "CSCO",
+          "bucket": "comparable_reported_boundary",
+          "bridge": {
+            "start": 68.1069712972,
+            "end": 55.1113125662,
+            "delta": -12.995658731,
+            "holdings_weight_effect": 0.0,
+            "reported_emissions_effect": -16.5624885284,
+            "revenue_denominator_effect": 3.56682979738,
             "reconciliation_residual": 0.0
           }
         },
@@ -338,18 +338,18 @@
         {
           "issuer_id": "META",
           "bucket": "boundary_changes",
-          "observed_delta": 1.3500685675437332
+          "observed_delta": 1.35006856754
         },
         {
           "issuer_id": "MSFT",
           "bucket": "comparable_reported_boundary",
           "bridge": {
-            "start": 23.212608829011632,
-            "end": 15.441290459444685,
-            "delta": -7.771318369566947,
-            "holdings_weight_effect": -3.4718167413011196,
-            "reported_emissions_effect": -1.5240544906404838,
-            "revenue_denominator_effect": -2.775447137625343,
+            "start": 23.212608829,
+            "end": 15.4412904594,
+            "delta": -7.77131836957,
+            "holdings_weight_effect": -3.4718167413,
+            "reported_emissions_effect": -1.52405449064,
+            "revenue_denominator_effect": -2.77544713763,
             "reconciliation_residual": 0.0
           }
         }
@@ -357,6 +357,12 @@
       "physical_decarbonisation_proven": false,
       "fx_of_global_revenues_not_separately_identified": true
     }
+  },
+  "calculated_float_reporting": {
+    "significant_digits": 12,
+    "raw_reconciliation_absolute_tolerance": 1e-09,
+    "residual_reporting": "Zero only after raw residual passes tolerance",
+    "input_and_source_hashes": "Exact canonical JSON, without report rounding"
   },
   "open_material_issues": [
     {

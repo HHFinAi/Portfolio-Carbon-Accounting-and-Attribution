@@ -26,6 +26,8 @@ python3 examples/integrated-portfolio/model.py
 
 `--check` recomputes and compares committed results and hashes without writing files. The final command prints the full result to stdout. No credentials, market feed or model API is needed. Standard-library code calls the existing `sf_agent.analytics` inventory and financed-emissions attribution functions; the example adds exact six-permutation Shapley attribution for WACI.
 
+Calculated report floats use 12 significant digits so Python 3.10–3.12 produce the same JSON despite their different floating-point summation algorithms. Raw attribution residuals must first pass the existing absolute tolerance of `1e-9` in the metric's units, then are reported as zero. This reporting precision does not imply issuer measurement accuracy. Integer inputs and canonical input/source hashes remain exact; source data is not rounded or changed.
+
 ## Definitions and coverage
 
 For each separately reported scope, financed emissions are `illustrative holding value / EVIC × issuer emissions`. WACI is `sum(portfolio market-value weight × issuer emissions / revenue in USD millions)`. Scope 1 plus market-based Scope 2 and Scope 3 remain separate; offsets and removal credits are not subtracted. All monetary inputs are USD. Currency translation already embedded in global reported revenue stays within the revenue denominator effect; it is not separately identified.

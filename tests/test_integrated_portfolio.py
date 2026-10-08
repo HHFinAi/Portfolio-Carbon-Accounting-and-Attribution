@@ -7,6 +7,9 @@ from pathlib import Path
 import subprocess
 import sys
 import unittest
+from unittest.mock import patch
+
+import sf_agent.analytics as analytics
 
 
 REPO = Path(__file__).resolve().parents[1]
@@ -99,6 +102,38 @@ class IntegratedPortfolioTests(unittest.TestCase):
                 self.assertAlmostEqual(bridge["reconciliation_residual"], 0, places=10)
         self.assertAlmostEqual(result["waci_attribution"]["scope12_tco2e"]["delta"],
                                6.909310896469366 - 9.129864092486727)
+
+    def test_report_is_identical_under_old_and_new_float_sum(self):
+        def legacy_sum(values, start=0):
+            # Python <=3.11 sums floats left to right; 3.12 compensates error.
+            total = start
+            for value in values:
+                total += value
+            return total
+        normal = model.calculate(self.inputs, self.sources)
+        with patch.object(model, "sum", legacy_sum, create=True), \
+                patch.object(analytics, "sum", legacy_sum, create=True):
+            legacy = model.calculate(self.inputs, self.sources)
+        self.assertEqual(normal, legacy)
+        self.assertEqual(model.digest(normal), model.digest(legacy))
+        self.assertEqual(normal["input_sha256"], model.digest(self.inputs))
+        self.assertEqual(normal["source_ledger_sha256"], model.digest(self.sources))
+
+    def test_report_rounding_preserves_inputs_and_rejects_actual_bridge_errors(self):
+        number = 1.2345678901234567
+        report = model.canonical_report({"calculated": number, "integer": 17,
+                                         "flag": False, "missing": None,
+                                         "reconciliation_residual": 1.4e-14})
+        self.assertEqual(report["calculated"], 1.23456789012)
+        self.assertEqual(type(report["integer"]), int)
+        self.assertIs(report["flag"], False)
+        self.assertIsNone(report["missing"])
+        self.assertEqual(report["reconciliation_residual"], 0)
+        self.assertEqual(number, 1.2345678901234567)
+        with self.assertRaisesRegex(ValueError, "raw attribution"):
+            model.canonical_report({"reconciliation_residual": 1e-7})
+        with self.assertRaisesRegex(ValueError, "finite numbers"):
+            model.canonical_report({"calculated": float("nan")})
 
     def test_changed_meta_scope3_basis_is_not_an_emissions_effect(self):
         result = model.calculate(self.inputs, self.sources)

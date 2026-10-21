@@ -1,5 +1,7 @@
 # Portfolio Carbon Accounting and Attribution Agent
 
+> **Responsible AI:** Analyst-controlled research; verify evidence, disclose AI assistance and protect confidential information. [Policy and project-specific checks](RESPONSIBLE_AI.md).
+
 [![Validate research workflow](https://github.com/HHFinAi/Portfolio-Carbon-Accounting-and-Attribution/actions/workflows/validate.yml/badge.svg?branch=main)](https://github.com/HHFinAi/Portfolio-Carbon-Accounting-and-Attribution/actions/workflows/validate.yml)
 
 **Public-data portfolio research by HHFinAi, with reproducible carbon accounting and explicit investment questions.**
